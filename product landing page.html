@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style type="text/css">
+    :root{
+  --backgroundColor:white;
+}
+body{
+  font-family:verdana;
+  background-color:var(--backgroundColor);
+}
+#header-img{
+  width:10vw;
+  height:7vw;
+}
+#header{
+  width:100%;
+  height:7vw;  
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  position: fixed;
+  background:white;
+  top:0px;
+  
+}
+.nav-link{
+  text-decoration:none;
+  color:Black;
+}
+#nav-bar{
+  padding-top:25px;
+  width:50%;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  margin-right:5vw;
+}
+#hhh{
+  text-align:center;
+}
+form{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+ 
+}
+#email{
+  margin:auto;
+  width:40vw;
+}
+#submit{
+  margin:auto;
+  max-width:10vw;
+  text-decoration:none;
+  border:none;
+  background-color:yellow;
+  
+  
+}
+#video-box{
+display:flex;
+  flexd-direction:row;
+  justify-content:center;
+  margin-top:30px;
+}
+#point{
+  margin-left:20vw;
+  display:flex;
+  
+}
+#img1{
+  width:10vw;
+  height:10vw;
+}
+#point-text{
+  margin-left:10vw;
+}
+
+#point2{
+  margin-left:20vw;
+  display:flex;
+  
+}
+#img2{
+  width:10vw;
+  height:10vw;
+}
+#point-text2{
+  margin-left:10vw;
+}
+
+#point3{
+  margin-left:20vw;
+  display:flex;
+  
+}
+#img3{
+  width:10vw;
+  height:10vw;
+}
+#point-text3{
+  margin-left:10vw;
+}
+
+.price{
+  border-style:solid;
+  border-radius:5px;
+  padding:1vw 10vw 1vw 10vw;
+}
+#parent-box{
+  margin-top:5vw;
+  margin-bottom:5vw;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+  border-width:1px;
+}
+h4{
+  text-align:center;
+  background-color:lightgray;
+  margin:-1vw -10vw -1vw -10vw;
+  padding:1vw;
+}
+
+@media(max-width:350px;){
+  :root{
+  --backgroundColor: gray;
+  }
+}
+footer{
+  background-color:lightgray;
+  text-align:right;
+  margin:0vw 10vw -10vw 10vw;
+  padding:1vw;
+  
+}
+[type='select']{
+  text-decoration:none;
+  border:none;
+  background-color:yellow;
+}
+  </style>
+</head>
+<body>
+<header id="header">
+ <img src="https://www.lego.com/static/favicon/lego-logo-512.png" id="header-img"> 
+ <nav id="nav-bar">
+   <a href="#point" class="nav-link">Features</a>
+   <a href="#video-box" class="nav-link">How It Works</a>
+   <a href="#parent-box" class="nav-link">Pricing</a>
+ </nav>
+</header>
+<br><br><br><br>
+<h1 id="hhh">Let's Build Things with LEGO</h1>
+<form id="form" action="https://www.freecodecamp.com/email-submit">
+  <input type="email" id="email" placeholder="Enter your email address" required name="email"><br>
+  <input type="submit" id="submit" value="GET STARTED">
+</form>
+
+<div id="point">
+  <img id="img1"src="https://reactjsexample.com/content/images/2019/08/React-material-icon-svg.jpg">
+  <div id="point-text">
+    <h1>Premium Materials</h1>
+    <p>Premium quality plastic.Safe for children.</p>
+  </div>
+</div>
+<br>
+<br>
+<div id="point2">
+  <img id="img2"src="https://media.istockphoto.com/vectors/fast-delivery-truck-icon-fast-shipping-design-for-website-and-mobile-vector-id1302438914?k=20&m=1302438914&s=612x612&w=0&h=N-OUgQU7NgYz-UIV-Xf6hkROzFC065UcGq1A2_KO0lk=">
+  <div id="point-text2">
+    <h1>Fast Shipping</h1>
+    <p>Enjoy the fast delivery!</p>
+  </div>
+</div>
+
+<br>
+<br>
+<div id="point3">
+  <img id="img3"src="https://cdn.iconscout.com/icon/premium/png-256-thumb/quality-assurance-614942.png">
+  <div id="point-text3">
+    <h1>Quality Assurance</h1>
+    <p>For every purchase you make, we will ensure there are no damages or faults.</p>
+  </div>
+</div>
+  
+<div id="video-box">
+<iframe id="video" src="http://techslides.com/demos/sample-videos/small.webm"></iframe>
+</div>
+<div id="parent-box">
+  <div id="box1" class="price">
+    <h4>lego1</h4>
+    <h1>$10</h1>
+    <p>Lorem<br>ipsum<br>dolor<br>sit<br>amet</p>
+    <button type="select">SELECT</button>
+  </div>
+  <div id="box2" class="price">
+    <h4>lego2</h4>
+    <h1>$12</h1>
+    <p>Lorem<br>ipsum<br>dolor<br>sit<br>amet</p>
+    <button type="select">SELECT</button>
+  </div>
+  <div id="box3" class="price">
+    <h4>lego3</h4>
+    <h1>$15</h1>
+    <p>Lorem<br>ipsum<br>dolor<br>sit<br>amet</p>
+    <button type="select">SELECT</button>
+  </div>
+</div>
+<footer>
+  <a href="" style="text-decoration:none; color:black;">Privacy</a>
+  <a href="" style="text-decoration:none;color:black;">Terms</a>
+  <a href="" style="text-decoration:none;color:black;">Contact</a>
+  <br>
+  <p>Copyright 2016<p>
+</footer>
+</body>
+</html>
